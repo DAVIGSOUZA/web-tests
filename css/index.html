@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tests</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS concepts</h1>
+    <h2> Selectors </h2>
+
+    <h3>.classe1</h3>
+    <p>classe 1 aplica o fundo azul</p>
+    <div class="classe1"></div>
+
+    <hr>
+
+    <h3>.classe2</h3>
+    <p>classe 2 aplica borda vermelha</p>
+    <div class="classe2"></div>
+    
+    <hr>
+
+    <h3>.classe1.classe2</h3>
+    <p>
+        a div abaixo aplica a classe 1 e 2 (
+        <code>div class="classe1 classe2"</code>
+        ), e quando isso acontece uma sombra é aplicada
+    </p>
+    <div class="classe1 classe2"></div>
+
+    <hr>
+
+    <h3>.classe1 .classe2</h3>
+    <p>
+        a div abaixo tem como pai a classe 1  e a filha tem a classe2<br>
+        <code> |< div class="classe1 > <br> |--< div class="classe2" > < /div > <br> |< div ></code> <br>
+        , e quando isso acontece a classe2 filha tem o efeito abaixo. (vide arquivo CSS)
+    </p>
+    <div class="classe1">
+        <!-- <div class="classe3"></div> -->
+        <div class="classe2"></div>
+    </div>
+
+    <hr>
+
+
+    <div>
+        <div class="classe3"></div>
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
